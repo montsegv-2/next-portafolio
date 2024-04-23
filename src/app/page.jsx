@@ -1,9 +1,11 @@
+import Image from "next/image";
+
 const Homepage = () => {
   return (
     <div className="h-full flex flex-col">
       {/* IMAGE CONTAINER */}
       <div className="h-1/2 relative">
-        <img src="/hero.png" alt="profile photo" fill />
+        <Image src="/hero.png" alt="profile photo" fill />
       </div>
       {/* TEXT CONTAINER */}
       <div className="h-1/2 flex flex-col gap-8 items-center justify-center">
@@ -21,8 +23,12 @@ const Homepage = () => {
         </p>
         {/* BUTTONS */}
         <div className="">
-          <button>View my work</button>
-          <button>Contact me</button>
+          <button className="p-4 rounded-lg ring-1 ring-back">
+            View my work
+          </button>
+          <button className="p-4 rounded-lg ring-1 ring-back">
+            Contact me
+          </button>
         </div>
       </div>
     </div>
