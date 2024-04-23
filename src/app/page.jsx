@@ -5,7 +5,7 @@ const Homepage = () => {
     <div className="h-full flex flex-col">
       {/* IMAGE CONTAINER */}
       <div className="h-1/2 relative">
-        <Image src="/hero.png" alt="profile photo" fill />
+        <Image src="/hero.png" alt="profile photo" width={300} height={300} />
       </div>
       {/* TEXT CONTAINER */}
       <div className="h-1/2 flex flex-col gap-8 items-center justify-center">
